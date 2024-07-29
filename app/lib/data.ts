@@ -172,6 +172,7 @@ export async function fetchCustomers() {
 }
 
 export async function fetchInvoiceById(id: string) {
+
   try {
     const db = await pool.getConnection();
     const [data] = await db.execute(`
